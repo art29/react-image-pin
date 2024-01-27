@@ -23,6 +23,11 @@ jobs:
       - name: Build Library
         run: yarn build
 
+      - name: Configure NPM authentication
+        run: |
+          yarn config set npmAlwaysAuth true
+          yarn config set npmAuthToken ${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish to NPM
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
