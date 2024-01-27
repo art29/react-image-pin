@@ -1,25 +1,28 @@
-import { ImagePinContainer, ImagePinContainerProps } from "./ImagePinContainer";
-import { Meta, StoryFn } from "@storybook/react";
-// @ts-ignore
+import {ImagePinContainer} from "./ImagePinContainer";
+import {Meta, StoryObj} from "@storybook/react";
+// @ts-expect-error image is not a module
 import exampleImage from "./static/example-image.png";
+import {useState} from "react";
 
 export default {
   children: "ImagePinContainer",
   component: ImagePinContainer,
 } as Meta;
 
-const Template: StoryFn<ImagePinContainerProps> = (args) => (
-  <ImagePinContainer {...args} />
-);
+type Story = StoryObj<typeof ImagePinContainer>;
 
-export const ImagePinContainerDefault = Template.bind({});
-ImagePinContainerDefault.args = {
-  image: exampleImage,
-  pins: [
-    {
-      positionX: 50,
-      positionY: 50,
-      id: "1",
+export const ImagePinContainerDefault: Story = {
+    args: {
+        image: exampleImage
     },
-  ],
+
+    render: function Render(args) {
+        const [pins, setPins] = useState([{
+            positionX: 50,
+            positionY: 50,
+            id: "1"
+        }]);
+
+        return <ImagePinContainer {...args} pins={pins} onNewPin={(pin) => setPins([...pins, { ...pin, id: String(pins.length)}])} />;
+    },
 };

@@ -6,23 +6,39 @@ export interface ImagePin {
   id: string;
 }
 
+export interface NewPinEvent {
+    positionX: number;
+    positionY: number;
+}
+
 export interface ImagePinContainerProps {
   image: string;
   imageAlt?: string;
-  pins: ImagePin[];
+  pins?: ImagePin[];
   customPinComponent?: React.ReactElement;
+  onNewPin?: (event: NewPinEvent) => void;
 }
 
 export const ImagePinContainer: React.FC<ImagePinContainerProps> = ({
-  pins,
+  pins = [],
   image,
-  imageAlt = "Map",
+  imageAlt = "Image",
   customPinComponent,
+  onNewPin
 }) => {
-  const ref = useRef(0);
+  const ref = useRef<HTMLImageElement>(null);
+
+  const handleNewPin = (event: React.MouseEvent) => {
+    if (!ref.current || !onNewPin) return;
+
+    const { left, top } = ref.current.getBoundingClientRect();
+    const positionX = ((event.clientX - left) / ref.current.clientWidth) * 100;
+    const positionY = ((event.clientY - top) / ref.current.clientHeight) * 100;
+    onNewPin({ positionX, positionY })
+  }
 
   return (
-    <div className="m-0 relative w-full h-full">
+    <div className="m-0 relative w-full h-full" onClick={handleNewPin} >
       <img src={image} alt={imageAlt} ref={ref} className="w-full h-full" />
       {pins.map((pin) => (
         <div
