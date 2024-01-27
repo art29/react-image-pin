@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts/stable'
+          node-version: 'lts/*'
 
       - name: Install Dependencies
         run: yarn install
