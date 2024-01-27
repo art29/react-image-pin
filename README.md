@@ -10,10 +10,10 @@ Install via yarn or npm
 
 ```bash
 # Yarn
-yarn add react-image-pin
+yarn add @art29/react-image-pin
 
 # NPM
-npm install react-image-pin
+npm install @art29/react-image-pin
 ```
 
 ## Props
@@ -31,7 +31,7 @@ npm install react-image-pin
 First, import the `ImagePinContainer` component from the library:
 
 ```typescript jsx
- { ImagePinContainer } from 'react-image-pin';
+ { ImagePinContainer } from '@art29/react-image-pin';
 ```
 
 Then, use it in your component:
