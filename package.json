@@ -7,7 +7,7 @@
     "url": "git+https://github.com/art29/react-image-pin.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@art29:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "dev": "vite",
