@@ -26,6 +26,8 @@ jobs:
       - name: Configure NPM authentication
         run: |
           yarn config set npmAlwaysAuth true
+          yarn config set npmRegistryServer https://npm.pkg.github.com
+          yarn config set npmPublishRegistry https://npm.pkg.github.com
           yarn config set npmAuthToken ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to NPM
