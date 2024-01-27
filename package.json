@@ -18,9 +18,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "postinstall": "husky",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "postinstall": "husky"
   },
   "lint-staged": {
     "*.{ts,js,tsx}": [
