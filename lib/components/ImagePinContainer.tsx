@@ -7,8 +7,8 @@ export interface ImagePin {
 }
 
 export interface NewPinEvent {
-    positionX: number;
-    positionY: number;
+  positionX: number;
+  positionY: number;
 }
 
 export interface ImagePinContainerProps {
@@ -24,7 +24,7 @@ export const ImagePinContainer: React.FC<ImagePinContainerProps> = ({
   image,
   imageAlt = "Image",
   customPinComponent,
-  onNewPin
+  onNewPin,
 }) => {
   const ref = useRef<HTMLImageElement>(null);
 
@@ -34,11 +34,11 @@ export const ImagePinContainer: React.FC<ImagePinContainerProps> = ({
     const { left, top } = ref.current.getBoundingClientRect();
     const positionX = ((event.clientX - left) / ref.current.clientWidth) * 100;
     const positionY = ((event.clientY - top) / ref.current.clientHeight) * 100;
-    onNewPin({ positionX, positionY })
-  }
+    onNewPin({ positionX, positionY });
+  };
 
   return (
-    <div className="m-0 relative w-full h-full" onClick={handleNewPin} >
+    <div className="m-0 relative w-full h-full" onClick={handleNewPin}>
       <img src={image} alt={imageAlt} ref={ref} className="w-full h-full" />
       {pins.map((pin) => (
         <div

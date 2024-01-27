@@ -2,8 +2,12 @@
 
 React Image Pin is a small React library made to be able to add pins to images. This can be used for maps, cards and more!
 
+This got inspired by this library: https://github.com/galexandrade/react-image-marker.
+
 ## Installation
+
 Install via yarn or npm
+
 ```bash
 # Yarn
 yarn add react-image-pin
@@ -13,8 +17,9 @@ npm install react-image-pin
 ```
 
 ## Props
+
 | Prop               | Type               | Default | Required | Description                                                                                      |
-|--------------------|--------------------|---------|----------|--------------------------------------------------------------------------------------------------|
+| ------------------ | ------------------ | ------- | -------- | ------------------------------------------------------------------------------------------------ |
 | image              | string             | -       | Yes      | The source of the image                                                                          |
 | imageAlt           | string             | 'Image' | No       | The alternative text for the image                                                               |
 | pins               | ImagePin[]         | `[]`    | No       | An array of pin objects. Each object should have `positionX`, `positionY`, and `id` properties   |
@@ -30,6 +35,7 @@ First, import the `ImagePinContainer` component from the library:
 ```
 
 Then, use it in your component:
+
 ```typescript jsx
 import Image from './image.png';
 <ImagePinContainer
@@ -51,10 +57,13 @@ import Image from './image.png';
 ```
 
 ## Custom Pin Component
+
 You can use a Custom Pin Component! This can be very useful if you want to do special actions on click, change the style and more!
 
 ## Contributing
+
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
+
 AGPL-3.0 (See LICENSE.md for more information)
