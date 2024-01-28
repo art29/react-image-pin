@@ -36,49 +36,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@art29/react-image-pin@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@art29/react-image-pin@workspace:."
-  dependencies:
-    "@dmeents/semantic-release-yarn": ^1.1.11
-    "@semantic-release/changelog": ^6.0.3
-    "@semantic-release/commit-analyzer": ^11.1.0
-    "@semantic-release/git": ^10.0.1
-    "@semantic-release/github": ^9.2.6
-    "@semantic-release/release-notes-generator": ^12.1.0
-    "@storybook/addon-essentials": ^7.6.10
-    "@storybook/addon-interactions": ^7.6.10
-    "@storybook/addon-links": ^7.6.10
-    "@storybook/addon-onboarding": ^1.0.11
-    "@storybook/blocks": ^7.6.10
-    "@storybook/react": ^7.6.10
-    "@storybook/react-vite": ^7.6.10
-    "@storybook/test": ^7.6.10
-    "@types/react": ^18.2.43
-    "@types/react-dom": ^18.2.17
-    "@typescript-eslint/eslint-plugin": ^6.14.0
-    "@typescript-eslint/parser": ^6.14.0
-    "@vitejs/plugin-react": ^4.2.1
-    autoprefixer: ^10.4.17
-    eslint: ^8.55.0
-    eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-react-refresh: ^0.4.5
-    eslint-plugin-storybook: ^0.6.15
-    husky: ^9.0.6
-    lint-staged: ^15.2.0
-    postcss: ^8.4.33
-    prettier: 3.2.4
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    semantic-release: ^23.0.0
-    storybook: ^7.6.10
-    tailwindcss: ^3.4.1
-    typescript: ^5.2.2
-    vite: ^5.0.8
-    vite-plugin-dts: ^3.7.2
-  languageName: unknown
-  linkType: soft
-
 "@aw-web-design/x-default-browser@npm:1.4.126":
   version: 1.4.126
   resolution: "@aw-web-design/x-default-browser@npm:1.4.126"
@@ -11722,6 +11679,49 @@ __metadata:
   checksum: c3907cc4c1d3e9ecc8ca7727058ebcba6ec89848d9e07bfd2c77ee8f28f1ad99bf55e38359dec8a1125de83d41ac09a2874f53c41415edc86ffa9840fa1b7856
   languageName: node
   linkType: hard
+
+"react-image-pin@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "react-image-pin@workspace:."
+  dependencies:
+    "@dmeents/semantic-release-yarn": ^1.1.11
+    "@semantic-release/changelog": ^6.0.3
+    "@semantic-release/commit-analyzer": ^11.1.0
+    "@semantic-release/git": ^10.0.1
+    "@semantic-release/github": ^9.2.6
+    "@semantic-release/release-notes-generator": ^12.1.0
+    "@storybook/addon-essentials": ^7.6.10
+    "@storybook/addon-interactions": ^7.6.10
+    "@storybook/addon-links": ^7.6.10
+    "@storybook/addon-onboarding": ^1.0.11
+    "@storybook/blocks": ^7.6.10
+    "@storybook/react": ^7.6.10
+    "@storybook/react-vite": ^7.6.10
+    "@storybook/test": ^7.6.10
+    "@types/react": ^18.2.43
+    "@types/react-dom": ^18.2.17
+    "@typescript-eslint/eslint-plugin": ^6.14.0
+    "@typescript-eslint/parser": ^6.14.0
+    "@vitejs/plugin-react": ^4.2.1
+    autoprefixer: ^10.4.17
+    eslint: ^8.55.0
+    eslint-plugin-react-hooks: ^4.6.0
+    eslint-plugin-react-refresh: ^0.4.5
+    eslint-plugin-storybook: ^0.6.15
+    husky: ^9.0.6
+    lint-staged: ^15.2.0
+    postcss: ^8.4.33
+    prettier: 3.2.4
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    semantic-release: ^23.0.0
+    storybook: ^7.6.10
+    tailwindcss: ^3.4.1
+    typescript: ^5.2.2
+    vite: ^5.0.8
+    vite-plugin-dts: ^3.7.2
+  languageName: unknown
+  linkType: soft
 
 "react-is@npm:18.1.0":
   version: 18.1.0
