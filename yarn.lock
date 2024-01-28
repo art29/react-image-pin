@@ -40,6 +40,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@art29/react-image-pin@workspace:."
   dependencies:
+    "@dmeents/semantic-release-yarn": ^1.1.11
     "@semantic-release/changelog": ^6.0.3
     "@semantic-release/commit-analyzer": ^11.1.0
     "@semantic-release/git": ^10.0.1
@@ -1535,6 +1536,19 @@ __metadata:
   version: 0.5.7
   resolution: "@discoveryjs/json-ext@npm:0.5.7"
   checksum: 2176d301cc258ea5c2324402997cf8134ebb212469c0d397591636cea8d3c02f2b3cf9fd58dcb748c7a0dade77ebdc1b10284fa63e608c033a1db52fddc69918
+  languageName: node
+  linkType: hard
+
+"@dmeents/semantic-release-yarn@npm:^1.1.11":
+  version: 1.1.11
+  resolution: "@dmeents/semantic-release-yarn@npm:1.1.11"
+  dependencies:
+    "@semantic-release/error": ^3.0.0
+    execa: ^5.1.1
+    js-yaml: ^4.1.0
+    read-pkg: ^5.2.0
+    semver: ^7.3.8
+  checksum: d7534820633f7c894efcbde9a83dd7a60dce68c68ce5b9823feb47e1ecbed0f64f7ae7772b06d071a779d4f9ed3b21fde32a7d4cdfed1689bc18f5cb6d91ad7c
   languageName: node
   linkType: hard
 
@@ -12395,7 +12409,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.1.2, semver@npm:^7.3.2, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.2, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:~7.5.4":
+"semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.1.2, semver@npm:^7.3.2, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8, semver@npm:^7.5.2, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:~7.5.4":
   version: 7.5.4
   resolution: "semver@npm:7.5.4"
   dependencies:
