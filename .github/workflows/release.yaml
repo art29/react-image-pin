@@ -16,6 +16,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
+          registry-url: 'https://npm.pkg.github.com'
 
       - name: Install Dependencies
         run: yarn install
@@ -23,14 +24,7 @@ jobs:
       - name: Build Library
         run: yarn build
 
-      - name: Configure NPM authentication
-        run: |
-          yarn config set npmAlwaysAuth true
-          yarn config set npmRegistryServer https://npm.pkg.github.com
-          yarn config set npmPublishRegistry https://npm.pkg.github.com
-          yarn config set npmAuthToken ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Publish to NPM
+      - name: Semantic Release
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        run: yarn npm publish --access public
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: yarn semantic-release
