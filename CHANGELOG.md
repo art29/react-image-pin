@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/art29/react-image-pin/compare/v1.0.0...v1.0.1) (2024-01-28)
+
+### Bug Fixes
+
+- npm token ([1f71f90](https://github.com/art29/react-image-pin/commit/1f71f90ff6f6e58ba29a02e32fad6de8015cc494))
+- usage of publish command ([5684adb](https://github.com/art29/react-image-pin/commit/5684adb372d9c43ae89a1297ca3fd8caab09c096))
+
 # 1.0.0 (2024-01-28)
 
 ### Features
