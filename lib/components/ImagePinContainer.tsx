@@ -31,8 +31,11 @@ export const ImagePinContainer: React.FC<ImagePinContainerProps> = ({
   const handleNewPin = (event: React.MouseEvent) => {
     if (!ref.current || !onNewPin) return;
 
+    // @ts-expect-error for some reason getBoundingClientRect is not typed
     const { left, top } = ref.current.getBoundingClientRect();
+    // @ts-expect-error for some reason clientWidth is not typed
     const positionX = ((event.clientX - left) / ref.current.clientWidth) * 100;
+    // @ts-expect-error for some reason clientHeight is not typed
     const positionY = ((event.clientY - top) / ref.current.clientHeight) * 100;
     onNewPin({ positionX, positionY });
   };
