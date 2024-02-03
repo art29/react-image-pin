@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/art29/react-image-pin/compare/v1.0.1...v1.0.2) (2024-01-28)
+
+### Bug Fixes
+
+- readme ([9061b88](https://github.com/art29/react-image-pin/commit/9061b88ec78c7b41823811c44d55f98006b7f603))
+
 ## [1.0.1](https://github.com/art29/react-image-pin/compare/v1.0.0...v1.0.1) (2024-01-28)
 
 ### Bug Fixes
