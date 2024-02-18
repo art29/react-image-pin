@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/art29/react-image-pin/compare/v1.0.4...v1.0.5) (2024-02-18)
+
+
+### Bug Fixes
+
+* Library missing imports ([7bf5e95](https://github.com/art29/react-image-pin/commit/7bf5e95d37026e28a1c9e74fa4a73c220556380b))
+
 ## [1.0.4](https://github.com/art29/react-image-pin/compare/v1.0.3...v1.0.4) (2024-02-18)
 
 
