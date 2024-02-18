@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/art29/react-image-pin/compare/v1.0.5...v1.0.6) (2024-02-18)
+
+
+### Bug Fixes
+
+* Library Missing Config ([9003059](https://github.com/art29/react-image-pin/commit/9003059f1a428956e3a234f83e352d818668d93e))
+
 ## [1.0.5](https://github.com/art29/react-image-pin/compare/v1.0.4...v1.0.5) (2024-02-18)
 
 
