@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/art29/react-image-pin/compare/v1.0.2...v1.0.3) (2024-02-03)
+
+
+### Bug Fixes
+
+* Prepare instead of PostInstall ([7b0f563](https://github.com/art29/react-image-pin/commit/7b0f563690351dbd6ce376c3fd4cdec6673ba225))
+
 ## [1.0.2](https://github.com/art29/react-image-pin/compare/v1.0.1...v1.0.2) (2024-01-28)
 
 ### Bug Fixes
