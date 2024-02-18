@@ -1,14 +1,10 @@
 import { ImagePinContainer } from "./ImagePinContainer";
-import { Meta, StoryObj } from "@storybook/react";
+import { StoryObj } from "@storybook/react";
 // @ts-expect-error image is not a module
 import exampleImage from "./static/example-image.png";
 import { useState } from "react";
 
-export default {
-  children: "ImagePinContainer",
-  component: ImagePinContainer,
-} as Meta;
-
+export default { component: ImagePinContainer };
 type Story = StoryObj<typeof ImagePinContainer>;
 
 export const ImagePinContainerDefault: Story = {
