@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/art29/react-image-pin/compare/v1.0.3...v1.0.4) (2024-02-18)
+
+
+### Bug Fixes
+
+* Missing TS Declarations ([c9e4fe0](https://github.com/art29/react-image-pin/commit/c9e4fe05cf659695a4e39a1143c93ae3b97e637c))
+
 ## [1.0.3](https://github.com/art29/react-image-pin/compare/v1.0.2...v1.0.3) (2024-02-03)
 
 
