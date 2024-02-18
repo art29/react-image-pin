@@ -9831,6 +9831,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"magic-string@npm:^0.30.2":
+  version: 0.30.7
+  resolution: "magic-string@npm:0.30.7"
+  dependencies:
+    "@jridgewell/sourcemap-codec": ^1.4.15
+  checksum: bdf102e36a44d1728ec61b69d655caba3f66ca58898e292f6debe57dc30896bd37908bfe3464a7464a435831a9e44aa905cebd681e21c2f44bbe4dddf225619f
+  languageName: node
+  linkType: hard
+
 "make-dir@npm:^2.0.0, make-dir@npm:^2.1.0":
   version: 2.1.0
   resolution: "make-dir@npm:2.1.0"
@@ -11720,6 +11729,7 @@ __metadata:
     typescript: ^5.2.2
     vite: ^5.0.8
     vite-plugin-dts: ^3.7.2
+    vite-plugin-lib-inject-css: ^1.3.0
   languageName: unknown
   linkType: soft
 
@@ -13786,6 +13796,18 @@ __metadata:
     vite:
       optional: true
   checksum: ee9cc1d4a63f6ab7d1b34df3113c74ef73181e76e2831134f7118257e01e703f4341c29d855133a516d55bad45b7c52b47c897377a7e894b0393fb34efc5d5b1
+  languageName: node
+  linkType: hard
+
+"vite-plugin-lib-inject-css@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "vite-plugin-lib-inject-css@npm:1.3.0"
+  dependencies:
+    magic-string: ^0.30.2
+    picocolors: ^1.0.0
+  peerDependencies:
+    vite: "*"
+  checksum: 5a6cc49c7b23a86024b433cd4523516db975272ac6c755072d92e0c1be4808b22a36b726c64dcfc528b6f6a2d0d5e892a2b3f5eeba8c7ee6be791739d8202306
   languageName: node
   linkType: hard
 
