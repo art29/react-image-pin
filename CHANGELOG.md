@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/art29/react-image-pin/compare/v1.0.7...v1.1.0) (2024-02-19)
+
+
+### Features
+
+* Added on existing pin click ([ba20e38](https://github.com/art29/react-image-pin/commit/ba20e380acdd83e6823fb4edaeacf00846fc460b))
+
 ## [1.0.7](https://github.com/art29/react-image-pin/compare/v1.0.6...v1.0.7) (2024-02-18)
 
 
