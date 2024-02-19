@@ -17,6 +17,7 @@ export interface ImagePinContainerProps {
   pins?: ImagePin[];
   customPinComponent?: React.ReactElement;
   onNewPin?: (event: NewPinEvent) => void;
+  onExistingPin?: (event: ImagePin) => void;
 }
 
 export const ImagePinContainer: React.FC<ImagePinContainerProps> = ({
@@ -25,6 +26,7 @@ export const ImagePinContainer: React.FC<ImagePinContainerProps> = ({
   imageAlt = "Image",
   customPinComponent,
   onNewPin,
+  onExistingPin,
 }) => {
   const ref = useRef<HTMLImageElement>(null);
 
@@ -37,6 +39,13 @@ export const ImagePinContainer: React.FC<ImagePinContainerProps> = ({
     onNewPin({ positionX, positionY });
   };
 
+  const handleExistingPinClick = (event: React.MouseEvent, pin: ImagePin) => {
+    if (!onExistingPin) return;
+
+    event.stopPropagation();
+    onExistingPin(pin);
+  };
+
   return (
     <div className="m-0 relative w-full h-full" onClick={handleNewPin}>
       <img src={image} alt={imageAlt} ref={ref} className="w-full h-full" />
@@ -44,6 +53,7 @@ export const ImagePinContainer: React.FC<ImagePinContainerProps> = ({
         <div
           key={pin.id}
           className="absolute"
+          onClick={(e) => handleExistingPinClick(e, pin)}
           style={{
             left: `${pin.positionX}%`,
             top: `${pin.positionY}%`,
