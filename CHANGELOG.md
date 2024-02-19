@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/art29/react-image-pin/compare/v1.0.6...v1.0.7) (2024-02-18)
+
+
+### Bug Fixes
+
+* JS main file name ([7a077ca](https://github.com/art29/react-image-pin/commit/7a077ca41526c7da77825744c4d89b7e49c8a5ac))
+
 ## [1.0.6](https://github.com/art29/react-image-pin/compare/v1.0.5...v1.0.6) (2024-02-18)
 
 
