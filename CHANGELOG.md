@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/art29/react-image-pin/compare/v1.1.0...v1.1.1) (2024-02-19)
+
+
+### Bug Fixes
+
+* added back css ([6cab0d5](https://github.com/art29/react-image-pin/commit/6cab0d5ddec84b27a16c1f7b7fb426b84fb14feb))
+
 # [1.1.0](https://github.com/art29/react-image-pin/compare/v1.0.7...v1.1.0) (2024-02-19)
 
 
