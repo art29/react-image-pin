@@ -4683,7 +4683,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prop-types@npm:*":
+"@types/prop-types@npm:*, @types/prop-types@npm:^15.7.3":
   version: 15.7.11
   resolution: "@types/prop-types@npm:15.7.11"
   checksum: 7519ff11d06fbf6b275029fe03fff9ec377b4cb6e864cac34d87d7146c7f5a7560fd164bdc1d2dbe00b60c43713631251af1fd3d34d46c69cd354602bc0c7c54
@@ -11723,6 +11723,7 @@ __metadata:
     prettier: 3.2.4
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-xarrows: ^2.0.2
     semantic-release: ^23.0.0
     storybook: ^7.6.10
     tailwindcss: ^3.4.1
@@ -11817,6 +11818,19 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 7ee8ef3aab74c7ae1d70ff34a27643d11ba1a8d62d072c767827d9ff9a520905223e567002e0bf6c772929d8ea1c781a3ba0cc4a563e92b1e3dc2eaa817ecbe8
+  languageName: node
+  linkType: hard
+
+"react-xarrows@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "react-xarrows@npm:2.0.2"
+  dependencies:
+    "@types/prop-types": ^15.7.3
+    lodash: ^4.17.21
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: e74a53405811f5031d9e31ed6d78f6b712e0c357dbd762abfa68b3ebf0c1311ca9a1396bece012881af54bc84f7ec09e191c0285db6763ce73dbd4cc7fdeffed
   languageName: node
   linkType: hard
 
