@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import Xarrow, { Xwrapper } from "react-xarrows";
+import React, { useRef } from "react";
+import Xarrow, { useXarrow, Xwrapper } from "react-xarrows";
 
 export interface ImagePin {
   positionX: number;
@@ -32,7 +32,6 @@ export const ImagePinContainer: React.FC<ImagePinContainerProps> = ({
   onExistingPin,
 }) => {
   const ref = useRef<HTMLImageElement>(null);
-  const [mounted, setMounted] = useState(false);
 
   const handleNewPin = (event: React.MouseEvent) => {
     if (!ref.current || !onNewPin) return;
@@ -50,14 +49,12 @@ export const ImagePinContainer: React.FC<ImagePinContainerProps> = ({
     onExistingPin(pin);
   };
 
-  useEffect(() => {
-    if (pins.length > 0) {
-      setMounted(true);
-    }
-  }, [pins]);
-
   return (
-    <div className="m-0 relative w-full h-full" onClick={handleNewPin}>
+    <div
+      onLoad={useXarrow}
+      className="m-0 relative w-full h-full"
+      onClick={handleNewPin}
+    >
       <img src={image} alt={imageAlt} ref={ref} className="w-full h-full" />
       <Xwrapper>
         {pins.map((pin, i) => (
@@ -78,7 +75,7 @@ export const ImagePinContainer: React.FC<ImagePinContainerProps> = ({
                 <div className="w-5 h-5 bg-red-500 rounded-full"></div>
               )}
             </div>
-            {mounted && arrow && i > 0 && (
+            {arrow && i > 0 && (
               <Xarrow {...arrow} start={`pin-${i - 1}`} end={`pin-${i}`} />
             )}
           </>
