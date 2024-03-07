@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/art29/react-image-pin/compare/v1.2.0...v1.2.1) (2024-03-07)
+
+
+### Bug Fixes
+
+* trying to fix first render bug ([729f47f](https://github.com/art29/react-image-pin/commit/729f47f0e59ce2c4a618ac5cf707556be8573821))
+
 # [1.2.0](https://github.com/art29/react-image-pin/compare/v1.1.1...v1.2.0) (2024-03-03)
 
 
