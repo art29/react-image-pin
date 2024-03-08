@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/art29/react-image-pin/compare/v1.2.3...v1.3.0) (2024-03-08)
+
+
+### Features
+
+* draggable working ([5bc6be7](https://github.com/art29/react-image-pin/commit/5bc6be7b06ffc6cf30949d5ee0c55bf21d35b46f))
+
 ## [1.2.3](https://github.com/art29/react-image-pin/compare/v1.2.2...v1.2.3) (2024-03-07)
 
 
