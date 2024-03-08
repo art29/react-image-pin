@@ -36,6 +36,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
     "react-xarrows": "^2.0.2"
   },
   "devDependencies": {

@@ -52,6 +52,7 @@ export const ImagePinContainerWithArrow: Story = {
       <ImagePinContainer
         {...args}
         pins={pins}
+        draggable={true}
         onNewPin={(pin) =>
           setPins([...pins, { ...pin, id: String(pins.length) }])
         }
