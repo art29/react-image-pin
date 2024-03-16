@@ -23,7 +23,7 @@ export interface ImagePinContainerProps {
   image: string;
   imageAlt?: string;
   pins?: ImagePin[];
-  customPinComponent?: React.ReactElement;
+  customPinComponent?: (pin: ImagePin) => React.ReactElement;
   arrow?: Omit<React.ComponentProps<typeof Xarrow>, "start" | "end">;
   onNewPin?: (event: NewPinEvent) => void;
   onExistingPin?: (event: ImagePin) => void;
@@ -158,7 +158,7 @@ export const ImagePinContainer = forwardRef<
                       }}
                     >
                       {customPinComponent ? (
-                        customPinComponent
+                        customPinComponent(pin)
                       ) : (
                         <div className="w-5 h-5 bg-red-500 rounded-full"></div>
                       )}
@@ -175,7 +175,7 @@ export const ImagePinContainer = forwardRef<
                     }}
                   >
                     {customPinComponent ? (
-                      customPinComponent
+                      customPinComponent(pin)
                     ) : (
                       <div className="w-5 h-5 bg-red-500 rounded-full"></div>
                     )}
