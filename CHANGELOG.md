@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/art29/react-image-pin/compare/v1.4.0...v1.5.0) (2024-09-04)
+
+
+### Features
+
+* Add Draggable per pin ([0092d08](https://github.com/art29/react-image-pin/commit/0092d08f62f3b4df8ee433b3e47ab0de41d3d974))
+
 # [1.4.0](https://github.com/art29/react-image-pin/compare/v1.3.0...v1.4.0) (2024-03-16)
 
 
