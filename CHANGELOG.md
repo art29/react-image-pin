@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/art29/react-image-pin/compare/v1.3.0...v1.4.0) (2024-03-16)
+
+
+### Features
+
+* pass pin in custom pin component ([8b1e1b4](https://github.com/art29/react-image-pin/commit/8b1e1b4067615f8d4a40c174f5fbe9ebfb48eb68))
+
 # [1.3.0](https://github.com/art29/react-image-pin/compare/v1.2.3...v1.3.0) (2024-03-08)
 
 
