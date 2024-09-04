@@ -12,6 +12,7 @@ export interface ImagePin {
   positionX: number;
   positionY: number;
   id: string;
+  draggable?: boolean;
 }
 
 export interface NewPinEvent {
@@ -142,7 +143,7 @@ export const ImagePinContainer = forwardRef<
           {mounted &&
             pins.map((pin, i) => (
               <>
-                {draggable ? (
+                {draggable && pin.draggable ? (
                   <Draggable
                     bounds="parent"
                     onDrag={() => setDragging(true)}
