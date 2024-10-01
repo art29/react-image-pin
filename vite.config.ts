@@ -15,7 +15,8 @@ export default defineConfig({
     copyPublicDir: false,
     lib: {
       entry: path.resolve(__dirname, "lib/main.ts"),
-      formats: ["es"],
+      formats: ["es", "cjs", "umd", "iife"],
+      name: "lib",
       fileName: "main",
     },
     rollupOptions: {
