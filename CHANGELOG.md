@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/art29/react-image-pin/compare/v1.6.0...v1.6.1) (2024-10-07)
+
+
+### Bug Fixes
+
+* export config ([5a495e5](https://github.com/art29/react-image-pin/commit/5a495e5cf87224939f19521f3bf40228778d401e))
+
 # [1.6.0](https://github.com/art29/react-image-pin/compare/v1.5.0...v1.6.0) (2024-10-01)
 
 
