@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/art29/react-image-pin/compare/v1.5.0...v1.6.0) (2024-10-01)
+
+
+### Features
+
+* Fix library build types ([b968bfc](https://github.com/art29/react-image-pin/commit/b968bfce3e5f9e2193ebeb873ca5ac83dd720ef3))
+
 # [1.5.0](https://github.com/art29/react-image-pin/compare/v1.4.0...v1.5.0) (2024-09-04)
 
 
