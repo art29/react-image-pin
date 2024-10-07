@@ -1,3 +1,5 @@
 import "./styles.css";
 
-export { ImagePinContainer } from "./components/ImagePinContainer";
+import { ImagePinContainer } from "./components/ImagePinContainer";
+export { ImagePinContainer };
+export default ImagePinContainer;
