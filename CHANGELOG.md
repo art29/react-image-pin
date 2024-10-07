@@ -1,3 +1,10 @@
+## [1.6.3](https://github.com/art29/react-image-pin/compare/v1.6.2...v1.6.3) (2024-10-07)
+
+
+### Bug Fixes
+
+* revertingish ([47227a9](https://github.com/art29/react-image-pin/commit/47227a936d32d01981fa8834f9b9bf9c9494c9ac))
+
 ## [1.6.2](https://github.com/art29/react-image-pin/compare/v1.6.1...v1.6.2) (2024-10-07)
 
 
