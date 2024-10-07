@@ -2,8 +2,8 @@
   "name": "react-image-pin",
   "version": "0.0.1",
   "type": "module",
-  "main": "dist/main.cjs",
-  "module": "dist/main.mjs",
+  "main": "dist/main.cjs.js",
+  "module": "dist/main.es.js",
   "types": "dist/main.d.ts",
   "files": [
     "dist"
