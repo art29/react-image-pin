@@ -17,7 +17,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, "lib/main.ts"),
       formats: ["es", "cjs", "umd", "iife"],
       name: "lib",
-      fileName: "main",
+      fileName: (format) => `main.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom", "react/jsx-runtime", "tailwindcss"],
