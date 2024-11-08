@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/art29/react-image-pin/compare/v1.6.3...v1.6.4) (2024-10-07)
+
+
+### Bug Fixes
+
+* package.json ([a31a526](https://github.com/art29/react-image-pin/commit/a31a52656e4023ec677e20be6d007ca3ea4211c4))
+
 ## [1.6.3](https://github.com/art29/react-image-pin/compare/v1.6.2...v1.6.3) (2024-10-07)
 
 
