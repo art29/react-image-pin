@@ -18,13 +18,16 @@ npm install react-image-pin
 
 ## Props
 
-| Prop               | Type               | Default | Required | Description                                                                                      |
-| ------------------ | ------------------ | ------- | -------- | ------------------------------------------------------------------------------------------------ |
-| image              | string             | -       | Yes      | The source of the image                                                                          |
-| imageAlt           | string             | 'Image' | No       | The alternative text for the image                                                               |
-| pins               | ImagePin[]         | `[]`    | No       | An array of pin objects. Each object should have `positionX`, `positionY`, and `id` properties   |
-| customPinComponent | React.ReactElement | -       | No       | A custom component to be used as the pin                                                         |
-| onNewPin           | function           | -       | No       | A function that is called when a new pin is added. It receives the new pin object as an argument |
+| Prop               | Type               | Default | Required | Description                                                                                                                                                                                                                    |
+| ------------------ | ------------------ | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| image              | string             | -       | Yes      | The source of the image                                                                                                                                                                                                        |
+| imageAlt           | string             | 'Image' | No       | The alternative text for the image                                                                                                                                                                                             |
+| pins               | ImagePin[]         | `[]`    | No       | An array of pin objects. Each object should have `positionX`, `positionY`, and `id` properties, there is also a optional draggable property to make that pin draggable if the draggable property of the parent is also to true |
+| customPinComponent | React.ReactElement | -       | No       | A custom component to be used as the pin                                                                                                                                                                                       |
+| onNewPin           | function           | -       | No       | A function that is called when a new pin is added. It receives the new pin object as an argument                                                                                                                               |
+| onExistingPin      | function           | -       | No       | A function that is called when a existing pin is clicked. It receives the existing pin object as an argument                                                                                                                   |
+| draggable          | boolean            | false   | No       | A boolean that indicates if the pins should be draggable or not                                                                                                                                                                |
+| onDraggedPin       | function           | -       | No       | A function that is called when a pin is dragged. It receives the pin object as an argument                                                                                                                                     |
 
 ## Usage
 
@@ -41,6 +44,7 @@ import Image from './image.png';
 <ImagePinContainer
   image={Image}
   imageAlt="A beautiful image"
+  draggable={true}
   pins={[
     {
       id: '1',
@@ -54,6 +58,9 @@ import Image from './image.png';
     },
   ]}
   onNewPin={(pin) => console.log(pin)}
+  onExistingPin={(pin) => console.log(pin)}
+  onDraggedPin={(pin) => console.log(pin)}
+/>
 ```
 
 ## Custom Pin Component
